@@ -1,0 +1,369 @@
+/* Myntra-Style Navbar */
+.navbar-myntra {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  transition: all var(--transition-base);
+}
+
+.navbar-myntra.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-top-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaec;
+}
+
+.nav-container-myntra {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 80px;
+}
+
+.nav-top-left {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+}
+
+.nav-logo-myntra {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text-myntra {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff3f6c 0%, #ff5722 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+/* Search Bar - Myntra Style */
+.nav-search-myntra {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f5f5f6;
+  border-radius: 4px;
+  padding: 0 1rem;
+  height: 40px;
+  transition: all var(--transition-base);
+}
+
+.nav-search-myntra:focus-within {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ff3f6c;
+}
+
+.search-icon-myntra {
+  color: #696e79;
+  font-size: 1.125rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.search-input-myntra {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.875rem;
+  color: #282c3f;
+  font-weight: 400;
+  width: 100%;
+}
+
+.search-input-myntra::placeholder {
+  color: #94969f;
+}
+
+.nav-top-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 200px;
+  justify-content: flex-end;
+}
+
+.nav-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: #282c3f;
+  font-size: 0.75rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem;
+  transition: all var(--transition-base);
+}
+
+.nav-icon-link:hover {
+  color: #ff3f6c;
+}
+
+.nav-icon-link svg {
+  font-size: 1.25rem;
+}
+
+.nav-icon-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cart-link-myntra {
+  position: relative;
+}
+
+.cart-badge-myntra {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff3f6c;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.625rem;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+.nav-link-myntra {
+  text-decoration: none;
+  color: #282c3f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: all var(--transition-base);
+}
+
+.nav-link-myntra:hover {
+  color: #ff3f6c;
+}
+
+.nav-menu-toggle-myntra {
+  background: none;
+  border: none;
+  color: #282c3f;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.nav-menu-toggle-myntra:hover {
+  color: #ff3f6c;
+}
+
+/* Category Navigation Bar */
+.nav-categories-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaec;
+  position: relative;
+}
+
+/* Container for category dropdown - fixed position */
+.categories-menu {
+  position: relative;
+}
+
+/* Ensure dropdown is positioned relative to nav-categories-bar */
+.nav-categories-bar {
+  position: relative;
+}
+
+.categories-menu {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 40px;
+  position: relative;
+}
+
+.category-item-wrapper {
+  position: static;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.category-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 1.25rem;
+  height: 100%;
+  text-decoration: none;
+  color: #282c3f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-base);
+  border-bottom: 3px solid transparent;
+  position: relative;
+}
+
+.category-link:hover {
+  color: #ff3f6c;
+  border-bottom-color: #ff3f6c;
+}
+
+.category-arrow {
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+  transition: transform var(--transition-base);
+}
+
+.category-item-wrapper:hover .category-arrow {
+  transform: rotate(180deg);
+}
+
+/* Category Dropdown - Detailed Myntra Style - Fixed Position */
+.category-dropdown-detailed {
+  position: fixed;
+  top: 140px; /* Below navbar (80px) + category bar (40px) + 20px offset */
+  left: 2rem; /* Space from left edge */
+  z-index: 1000;
+  margin-top: 0;
+  width: max-content;
+  min-width: 1000px;
+  max-width: 1200px;
+  pointer-events: auto;
+  transform: none; /* Remove centering transform */
+}
+
+/* Ensure dropdown stays visible on hover */
+.category-item-wrapper:hover .category-dropdown-detailed {
+  display: block;
+}
+
+/* Keep dropdown visible when hovering over it */
+.category-dropdown-detailed:hover {
+  display: block;
+}
+
+.category-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  z-index: 1000;
+  padding: 1rem 0;
+  margin-top: 1px;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #282c3f;
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: all var(--transition-base);
+  text-transform: capitalize;
+}
+
+.dropdown-item:hover {
+  background: #f5f5f6;
+  color: #ff3f6c;
+  padding-left: 2rem;
+}
+
+/* Mobile Menu */
+@media (max-width: 968px) {
+  .nav-container-myntra {
+    padding: 0 1rem;
+    height: 60px;
+  }
+
+  .nav-search-myntra {
+    display: none;
+  }
+
+  .nav-top-right {
+    gap: 1rem;
+  }
+
+  .nav-icon-label {
+    display: none;
+  }
+
+  .nav-icon-link {
+    padding: 0.5rem;
+  }
+
+  .nav-categories-bar {
+    display: none;
+  }
+
+  .category-dropdown-detailed {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transform: none;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .nav-categories-bar {
+    display: none;
+  }
+
+  .logo-text-myntra {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container-myntra {
+    height: 56px;
+  }
+
+  .nav-top-left {
+    min-width: auto;
+  }
+
+  .nav-top-right {
+    min-width: auto;
+    gap: 0.75rem;
+  }
+
+  .nav-link-myntra {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,40 @@
+.admin-orders {
+  padding: 2rem 0;
+}
+
+.orders-table {
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.orders-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table thead {
+  background: var(--bg-light);
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.status-select {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .orders-table {
+    overflow-x: auto;
+  }
+}
+

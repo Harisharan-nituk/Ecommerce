@@ -1,0 +1,342 @@
+/* Myntra-Style Shop Pages */
+.shop-page-myntra {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.shop-header-myntra {
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaec;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.page-title-myntra {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.page-subtitle-myntra {
+  color: #94969f;
+  font-size: 0.875rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.shop-container-myntra {
+  padding-bottom: 3rem;
+}
+
+.shop-layout-myntra {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+}
+
+/* Filters Sidebar */
+.filters-sidebar-myntra {
+  background: #ffffff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+}
+
+.filters-header-myntra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eaeaec;
+}
+
+.filters-header-myntra h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #282c3f;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.close-filters-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #94969f;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: all var(--transition-base);
+}
+
+.close-filters-btn:hover {
+  color: #282c3f;
+}
+
+.filter-section-myntra {
+  margin-bottom: 2rem;
+}
+
+.filter-section-myntra:last-child {
+  margin-bottom: 0;
+}
+
+.filter-title-myntra {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #282c3f;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.price-filter-myntra {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.price-filter-myntra > span {
+  text-align: center;
+  color: #94969f;
+  font-size: 0.875rem;
+}
+
+.price-input-myntra {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #282c3f;
+  transition: all var(--transition-base);
+}
+
+.price-input-myntra:focus {
+  outline: none;
+  border-color: #ff3f6c;
+  box-shadow: 0 0 0 3px rgba(255, 63, 108, 0.1);
+}
+
+/* Beauty Subcategories */
+.beauty-subcategories-myntra {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.beauty-section-myntra {
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.beauty-section-header-myntra {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fafafa;
+  border: none;
+  text-align: left;
+  color: #282c3f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.beauty-section-header-myntra:hover {
+  background: #f0f0f0;
+  color: #ff3f6c;
+}
+
+.beauty-section-header-myntra svg {
+  font-size: 1rem;
+  color: #94969f;
+  transition: all var(--transition-base);
+}
+
+.beauty-section-header-myntra:hover svg {
+  color: #ff3f6c;
+}
+
+.beauty-section-items-myntra {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background: #ffffff;
+}
+
+.beauty-subcategory-item-myntra {
+  padding: 0.625rem 1rem;
+  background: transparent;
+  border: none;
+  text-align: left;
+  color: #282c3f;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+}
+
+.beauty-subcategory-item-myntra:hover {
+  background: #fff0f3;
+  color: #ff3f6c;
+  padding-left: 1.25rem;
+}
+
+.beauty-subcategory-item-myntra.active {
+  background: #ff3f6c;
+  color: white;
+  font-weight: 600;
+}
+
+.beauty-subcategory-item-myntra.active:hover {
+  background: #ff5722;
+  padding-left: 1rem;
+}
+
+/* Main Content */
+.products-main-myntra {
+  flex: 1;
+}
+
+.products-toolbar-myntra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaec;
+}
+
+.filter-toggle-btn-myntra {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  color: #282c3f;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.filter-toggle-btn-myntra:hover {
+  border-color: #ff3f6c;
+  color: #ff3f6c;
+}
+
+.sort-options-myntra {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sort-options-myntra label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #282c3f;
+}
+
+.sort-select-myntra {
+  padding: 0.5rem 1rem;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #282c3f;
+  background: white;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.sort-select-myntra:focus {
+  outline: none;
+  border-color: #ff3f6c;
+  box-shadow: 0 0 0 3px rgba(255, 63, 108, 0.1);
+}
+
+.products-grid-myntra {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.error-message-myntra {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #94969f;
+}
+
+@media (max-width: 968px) {
+  .shop-layout-myntra {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar-myntra {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .filters-sidebar-myntra.open {
+    left: 0;
+  }
+
+  .close-filters-btn {
+    display: block;
+  }
+
+  .filter-toggle-btn-myntra {
+    display: flex;
+  }
+
+  .products-grid-myntra {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-header-myntra {
+    padding: 1.5rem 0;
+  }
+
+  .page-title-myntra {
+    font-size: 1.5rem;
+  }
+
+  .products-toolbar-myntra {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .products-grid-myntra {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+}
